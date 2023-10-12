@@ -1,5 +1,7 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+
+
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }
@@ -40,3 +42,20 @@
 .blazor-error-boundary::after {
     content: "An error has occurred."
 }
+
+.sidebar-window {
+    height: 100%;
+    width: 300px;
+    padding: 0px 2px;
+    /* background: rgb(41, 38, 35);
+    background: linear-gradient(90deg, rgba(41, 38, 35, 1) 0%, rgba(34, 32, 30, 1) 50%); */
+}
+
+.sidebar-head{
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+

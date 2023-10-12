@@ -1,0 +1,39 @@
+.sidebar {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar-buttons{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    width: 70px;
+    justify-content: space-between;
+}
+.sidebar-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 2px solid;
+}
+
+.sidebar-settings {
+    border-bottom: 0px solid;
+    border-top: 2px solid;
+}
+
+.sidebar-pages {
+    border-bottom: 0px solid;
+}
+
+.sidebar-page {
+    width: 50px;
+    height: auto;
+    padding: 5px 0px;
+    transition-duration: 250ms;
+    transition-property: color;
+    &:hover {
+        color: white;
+    }
+}
