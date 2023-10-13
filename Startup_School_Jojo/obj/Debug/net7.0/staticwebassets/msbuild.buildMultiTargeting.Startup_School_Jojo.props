@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Startup_School_Jojo.props" />
-</Project>
