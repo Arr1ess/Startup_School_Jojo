@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+ExmSFpTpcjMUsOZXsqbLcHr575b8Qc7BNKhQpUzVZ2Ov82B4Zfl2pC8cep27/sXYV9HzzpkqQ5qbrkoVq2yFA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ar1ess\\Program\\web\\OnlineSchool\\Startup_School_Jojo\\Startup_School_Jojo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ar1ess\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

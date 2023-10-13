@@ -1,0 +1,92 @@
+<div class="sidebar-window market @view">
+    <div class="sidebar-head">
+        <p class="sidebar-name">Market</p>
+    </div>
+    <div class="sidebar-contain">
+        <div class="market-search">Input text</div>
+        <div class="market-dropdowns">
+            <div class="market-dropdown">
+                <button @onclick='() => ToggleDropdown(0)' class="dropdown-toggle">1</button>
+                <div class="dropdown-content @active[0]">
+                    <div class="animated-content">
+                        Content inside the dropdown
+                        <h3>fddf</h3>
+                        <h3>rweew</h3>
+                        <h4>wewe</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="market-dropdown">
+                <button @onclick='() => ToggleDropdown(1)' class="dropdown-toggle">2</button>
+                <div class="dropdown-content @active[1]">
+                    <div class="animated-content">
+                        Content inside the dropdown
+                        <h3>fddf</h3>
+                        <h3>rweew</h3>
+                        <h4>wewe</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="market-dropdown">
+                <button @onclick='() => ToggleDropdown(2)' class="dropdown-toggle">3</button>
+                <div class="dropdown-content @active[2]">
+                    <div class="animated-content">
+                        Content inside the dropdown
+                        <h3>fddf</h3>
+                        <h3>rweew</h3>
+                        <h4>wewe</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .sidebar-window{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    .market-dropdowns{
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+    .dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: all 1s ease-in 0s;
+    }
+    .sidebar-contain{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        overflow: hidden;
+        color: white;
+    }
+    .dropdown-content.active {
+        max-height: 500px;
+    }
+
+    .animated-content {
+        padding: 10px;
+    }
+</style>
+@code {
+    [Parameter]
+    public string? view { get; set; }
+    private string[] active = {"", "", ""};
+    private void ToggleDropdown(int i)
+    {
+        
+        if (active[i] == "")
+        {
+            active[i] = "active";
+        }
+        else
+        {
+            active[i] = "";
+        }
+    }
+}
