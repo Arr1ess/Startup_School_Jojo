@@ -1,4 +1,4 @@
-<div class="sidebar-window workspaces">
+<div class="sidebar-window workspaces @view">
     <div class="sidebar-head">
         <p class="sidebar-name">Chat</p>
         
@@ -47,6 +47,8 @@
 </style>
 
 @code {
+    [Parameter]
+    public string? view { get; set; }
     private List<Component> _components = new List<Component>();
 
     protected override void OnInitialized()

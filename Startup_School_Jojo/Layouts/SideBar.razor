@@ -101,26 +101,28 @@
     @switch (page)
     {
         case "friends":
-            <Startup_School_Jojo.Components.SideBarItem.Friends />
+            <Startup_School_Jojo.Components.SideBarItem.Friends view="@view" />
             break;
         case "modules":
-            <Startup_School_Jojo.Components.SideBarItem.Modules />
+            <Startup_School_Jojo.Components.SideBarItem.Modules view="@view" />
             break;
         case "chat":
-            <Startup_School_Jojo.Components.SideBarItem.Chat />
+            <Startup_School_Jojo.Components.SideBarItem.Chat view="@view" />
             break;
         case "info":
-            <Startup_School_Jojo.Components.SideBarItem.Info />
+            <Startup_School_Jojo.Components.SideBarItem.Info view="@view" />
             break;
         case "account":
-            <Startup_School_Jojo.Components.SideBarItem.Account />
+            <Startup_School_Jojo.Components.SideBarItem.Account view="@view" />
             break;
         case "settings":
-            <Startup_School_Jojo.Components.SideBarItem.Settings />
+            <Startup_School_Jojo.Components.SideBarItem.Settings view="@view" />
             break;
         default:
             break;
     }
+
+
 
 
 
@@ -130,17 +132,36 @@
 
 
 @code {
+    private string view = "";
     private string page = "";
-    private void ChangePanel(string text)
+    private async void ChangePanel(string text)
     {
-        if (page == text || text == "home")
+        if (page != "")
         {
-            page = "";
+            view = "";
+            await Task.Delay(150);
+            if (page == text || text == "home")
+            {
+                page = "";
+            }
+            else
+            {
+                page = text;
+                StateHasChanged();
+                await Task.Delay(150);
+                view = "view";
+            }
         }
         else
         {
+
             page = text;
+            StateHasChanged();
+            await Task.Delay(20);
+            view = "view";
+
         }
+        StateHasChanged();
 
     }
 }

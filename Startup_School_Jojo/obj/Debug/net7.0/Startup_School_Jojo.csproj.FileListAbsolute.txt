@@ -89,7 +89,6 @@ C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\obj\Debug\net7.0\St
 C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\obj\Debug\net7.0\Startup_School_Jojo.genruntimeconfig.cache
 C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\obj\Debug\net7.0\ref\Startup_School_Jojo.dll
 C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\obj\Debug\net7.0\scopedcss\Layouts\SideBAr.razor.rz.scp.css
-C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\obj\Debug\net7.0\scopedcss\Components\SideBarItem\Modules.razor.rz.scp.css
 C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\obj\Debug\net7.0\scopedcss\Components\Home.razor.rz.scp.css
 C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\bin\Debug\net7.0\Components\ClientWorkspaces\Workspace1.json
 C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo\bin\Debug\net7.0\Components\ClientWorkspaces\Workspace2.json
