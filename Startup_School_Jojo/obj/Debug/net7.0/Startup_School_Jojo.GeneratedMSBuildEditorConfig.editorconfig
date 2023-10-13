@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Ar1ess\Program\web\OnlineSchool\Startup_School_Jojo
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Ar1ess/Program/web/OnlineSchool/Startup_School_Jojo/Components/HashPage.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xIYXNoUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ar1ess/Program/web/OnlineSchool/Startup_School_Jojo/Components/SideBarItem/Account.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaWRlQmFySXRlbVxBY2NvdW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

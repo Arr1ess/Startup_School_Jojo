@@ -1,0 +1,10 @@
+@page "/{HashCode}"
+@code {
+    [Parameter]
+    public string HashCode { get; set; }
+
+    protected override void OnInitialized()
+    {
+        // Здесь можно добавить логику, связанную с отображением страницы с использованием хеш-кода
+    }
+}

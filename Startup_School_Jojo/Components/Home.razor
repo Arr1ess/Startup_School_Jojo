@@ -1,40 +1,23 @@
+@using HashCodeGenerator
 @page "/"
-<div class="content-start">
-    <div class="hex-code">
-        <p>Генерация HESH-кода</p>
-        <p>Code</p>
-    </div>
-    <div class="select-workspace">
-        <label>
-            Выберите шаблон пространства
-            <select @onchange="OnDropdownChange">
-                <option value="">Select a value</option>
-                <option value="RocketLab">Rocket Lab</option>
-                <option value="SpaceX">SpaceX</option>
-                <option value="UnitedLaunchAlliance">ULA</option>
-                <option value="VirginGalactic">Virgin Galactic</option>
-            </select>
-        </label>
-    </div>
-    <div class="private-checkbox">
-        <input type="checkbox" @bind="@IsChecked" />
+@inject NavigationManager NavigationManager
 
-        
-    </div>
-    <div class="btn-start">
-        <button>
-            Начать
-        </button>
-    </div>
-</div>
+<h3>Генератор Hash-кода</h3>
+
+<input class="black" type="text" bind="@InputString" />
+<button @onclick="CreatePage">Создать</button>
 
 @code {
-    private void OnDropdownChange(ChangeEventArgs e)
-    {
+    private string InputString { get; set; } = "ddd";
 
-    }
-    private bool IsChecked {get; set;}
-    private void ToggleCheckBox(){
-        IsChecked = !IsChecked;
+    private void CreatePage()
+    {
+        string hashCode = HashCodeGenerator.GenerateHashCode(InputString);
+        NavigationManager.NavigateTo(hashCode);
     }
 }
+<style>
+    .black{
+        background-color: aqua;
+    }
+</style>
